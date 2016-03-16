@@ -5,7 +5,6 @@
  */
 package com.adasasistemas.pilot.webtest3;
 
-import java.io.File;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
