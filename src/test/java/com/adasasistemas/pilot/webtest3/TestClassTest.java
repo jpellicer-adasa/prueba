@@ -70,31 +70,6 @@ public class TestClassTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
-      @Test
-    public void testSimple() throws Exception {
-        // Create a new instance of the Firefox driver
-        // Notice that the remainder of the code relies on the interface, 
-        // not the implementation.
-        FirefoxBinary fb = new FirefoxBinary(new File("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"));
-        WebDriver driver = new FirefoxDriver(fb, null);
-      
-
-        // And now use this to visit NetBeans
-        driver.get("http://www.netbeans.org");
-        // Alternatively the same thing can be done like this
-        // driver.navigate().to("http://www.netbeans.org");
-
-        // Check the title of the page
-        // Wait for the page to load, timeout after 10 seconds
-        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-            @Override
-            public Boolean apply(WebDriver d) {
-                return d.getTitle().contains("NetBeans");
-            }
-        });
-
-        //Close the browser
-        driver.quit();
-    }
+    
     
 }
