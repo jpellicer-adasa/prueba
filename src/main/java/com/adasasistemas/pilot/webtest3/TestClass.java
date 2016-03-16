@@ -16,7 +16,7 @@ public class TestClass {
     }
     
     public String getTwo(){
-        return "noTwo";
+        return "two";
     }
     
 }
